@@ -77,7 +77,39 @@
   }
   .num-value{font-size:clamp(26px,4.5vw,42px);font-weight:900;color:var(--bf-light);line-height:1;}
   .num-label{font-size:12px;color:var(--subtle);margin-top:6px;}
-  .num-sub{font-size:11px;color:var(--gray);margin-top:3px;}y:flex;align-items:flex-start;gap:6px;}
+  .num-sub{font-size:11px;color:var(--gray);margin-top:3px;}
+
+  /* HIGHLIGHT BOX */
+  .highlight-box{
+    margin-top:24px;padding:20px 24px;border-radius:16px;
+    background:linear-gradient(135deg,rgba(0,71,171,0.15),rgba(74,144,217,0.05));
+    border:1px solid rgba(74,144,217,0.3);
+    display:flex;align-items:center;gap:16px;
+  }
+  .highlight-icon{font-size:28px;flex-shrink:0;}
+  .highlight-box p{font-size:14px;color:var(--subtle);line-height:1.6;}
+  .highlight-box strong{color:var(--text);}
+
+  /* ECOSYSTEM */
+  .ecosystem-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;}
+  .eco-card{
+    background:var(--card);border-radius:16px;padding:22px;
+    border:1px solid rgba(255,255,255,0.07);position:relative;overflow:hidden;
+  }
+  .eco-card::before{
+    content:'';position:absolute;top:0;left:0;right:0;height:3px;
+    background:linear-gradient(90deg,var(--bf-blue),var(--bf-light));
+  }
+  .eco-icon{font-size:32px;margin-bottom:12px;display:block;}
+  .eco-tag{
+    display:inline-block;background:rgba(74,144,217,0.12);border:1px solid rgba(74,144,217,0.25);
+    border-radius:20px;font-size:10px;font-weight:700;color:var(--bf-light);
+    padding:2px 9px;letter-spacing:0.5px;text-transform:uppercase;margin-bottom:8px;
+  }
+  .eco-card h4{font-size:16px;font-weight:800;margin-bottom:6px;}
+  .eco-card p{font-size:13px;color:var(--subtle);line-height:1.5;}
+  .eco-bullets{list-style:none;margin-top:10px;display:flex;flex-direction:column;gap:5px;}
+  .eco-bullets li{font-size:12px;color:var(--subtle);display:flex;align-items:flex-start;gap:6px;}
   .eco-bullets li::before{content:'→';color:var(--bf-light);flex-shrink:0;}
 
   /* FUNIL */
@@ -127,6 +159,19 @@
     padding:4px 10px;text-transform:uppercase;letter-spacing:0.5px;
   }
   .client-sub{font-size:11px;color:var(--gray);margin-top:5px;}
+
+  /* LOGOS */
+  .client-logo{
+    display:inline-flex;align-items:center;justify-content:center;
+    border-radius:8px;padding:8px 14px;margin-bottom:10px;
+    font-family:'Arial Black','Segoe UI Black',sans-serif;
+    font-weight:900;font-size:13px;letter-spacing:-0.3px;min-width:100px;line-height:1;
+  }
+  .logo-smartfit{background:#FFD700;color:#1a1a1a;}
+  .logo-selfit{background:#0D2D6B;color:#fff;}
+  .logo-bodytech{background:#C8102E;color:#fff;}
+  .logo-skyfit{background:#009B3A;color:#fff;}
+  .logo-plus{background:rgba(74,144,217,0.12);color:var(--bf-light);border:1px solid rgba(74,144,217,0.25);}
 
   /* SHOWCASE */
   .showcase-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:20px;}
@@ -409,48 +454,28 @@
     <p class="section-sub">Smart Fit, SelFit, Bodytech, SkyFit — cases reais de academias que usaram a PremiaPão para ativar suas regiões.</p>
     <div class="clients-grid">
       <div class="client-card">
-        <div class="client-icon">💛</div>
-        <div class="client-brand"><span>Smart Fit</span></div>
+        <div class="client-logo logo-smartfit">smartfit</div>
         <div class="client-sub">Jundiaí · Caucaia · Nova Iguaçu</div>
       </div>
       <div class="client-card">
-        <div class="client-icon">🔵</div>
-        <div class="client-brand"><span>SelFit</span></div>
+        <div class="client-logo logo-selfit">SelFit</div>
         <div class="client-sub">Campanha regional</div>
       </div>
       <div class="client-card">
-        <div class="client-icon">🔴</div>
-        <div class="client-brand"><span>Bodytech</span></div>
+        <div class="client-logo logo-bodytech">Bodytech</div>
         <div class="client-sub">Ativação de alunos</div>
       </div>
       <div class="client-card">
-        <div class="client-icon">🟢</div>
-        <div class="client-brand"><span>SkyFit</span></div>
+        <div class="client-logo logo-skyfit">SkyFit</div>
         <div class="client-sub">Campanha local</div>
       </div>
       <div class="client-card">
-        <div class="client-icon">⚡</div>
-        <div class="client-brand"><span>Smart Fit GV</span></div>
+        <div class="client-logo logo-smartfit">smartfit</div>
         <div class="client-sub">Granja Viana São Camilo</div>
       </div>
       <div class="client-card">
-        <div class="client-icon">🏋️</div>
-        <div class="client-brand"><span>+ academias</span></div>
+        <div class="client-logo logo-plus">+ academias</div>
         <div class="client-sub">Em todo o Brasil</div>
-      </div>
-    </div>
-
-    <!-- Casos reais -->
-    <div class="showcase-grid">
-      <div class="showcase-card">
-        <div class="showcase-icon">📰</div>
-        <strong>Alares Internet — Ibiúna/SP</strong>
-        <p>Campanha com saquinhos e blitz local. Resultado: reconhecimento de marca e leads qualificados na região.</p>
-      </div>
-      <div class="showcase-card">
-        <div class="showcase-icon">🛒</div>
-        <strong>Maturatta — Assaí Atacadista</strong>
-        <p>Ativação dentro de supermercado com promotoras e distribuição ativa. Alta conversão no ponto de venda.</p>
       </div>
     </div>
   </section>
@@ -490,14 +515,14 @@
 
     <a href="https://www.portaldofranchising.com.br/historias-do-franchising/casal-fatura-com-franquia-premiapao/" target="_blank" class="pp-article-card">
       <div class="pp-article-header">
-        <span class="pp-source-tag">Portal do Franchising</span>
-        <span class="pp-article-title-sm">ABF · Histórias do Franchising</span>
+        <span class="pp-source-tag">ABF — Associação Brasileira de Franchising</span>
+        <span class="pp-article-title-sm">Site oficial · Histórias do Franchising</span>
       </div>
       <div class="pp-article-body">
-        <h5>"Casal conquista resultado em 3 meses com franquia PremiaPão"</h5>
+        <h5>Nossa franquia em destaque no site da ABF: "Casal conquista resultado em 3 meses com a PremiaPão"</h5>
         <div class="pp-article-meta">
           <span>📅 18/02/2026</span>
-          <span>🏆 Destaque ABF</span>
+          <span>🏆 Publicado pela ABF</span>
           <span>🌐 portaldofranchising.com.br</span>
         </div>
       </div>
@@ -530,3 +555,4 @@
 
 </body>
 </html>
+                                                                                                                                                                                                           
