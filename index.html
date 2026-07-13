@@ -145,7 +145,7 @@
   .action-icon{font-size:36px;padding:20px 12px 8px;display:block;text-align:center;}
 
   /* SOCIAL PROOF */
-  .clients-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
+  .clients-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:14px;}
   .client-card{
     background:var(--card);border-radius:14px;
     border:1px solid rgba(255,255,255,0.06);
@@ -162,16 +162,13 @@
 
   /* LOGOS */
   .client-logo{
-    display:inline-flex;align-items:center;justify-content:center;
-    border-radius:8px;padding:8px 14px;margin-bottom:10px;
-    font-family:'Arial Black','Segoe UI Black',sans-serif;
-    font-weight:900;font-size:13px;letter-spacing:-0.3px;min-width:100px;line-height:1;
+    display:flex;align-items:center;justify-content:center;
+    margin-bottom:10px;
   }
-  .logo-smartfit{background:#FFD700;color:#1a1a1a;}
-  .logo-selfit{background:#0D2D6B;color:#fff;}
-  .logo-bodytech{background:#C8102E;color:#fff;}
-  .logo-skyfit{background:#009B3A;color:#fff;}
-  .logo-plus{background:rgba(74,144,217,0.12);color:var(--bf-light);border:1px solid rgba(74,144,217,0.25);}
+  .client-logo svg{
+    max-width:100%;height:auto;
+    filter:drop-shadow(0 2px 6px rgba(0,0,0,0.25));
+  }
 
   /* SHOWCASE */
   .showcase-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:20px;}
@@ -454,27 +451,48 @@
     <p class="section-sub">Smart Fit, SelFit, Bodytech, SkyFit — cases reais de academias que usaram a PremiaPão para ativar suas regiões.</p>
     <div class="clients-grid">
       <div class="client-card">
-        <div class="client-logo logo-smartfit">smartfit</div>
+        <div class="client-logo">
+          <svg viewBox="0 0 130 46" xmlns="http://www.w3.org/2000/svg" width="130" height="46" role="img" aria-label="SmartFit">
+            <rect width="130" height="46" rx="9" fill="#FFD700"/>
+            <text x="65" y="31" font-family="Arial Black,Impact,sans-serif" font-weight="900" font-size="18" fill="#1a1a1a" text-anchor="middle" letter-spacing="-0.8">smartfit</text>
+          </svg>
+        </div>
         <div class="client-sub">Jundiaí · Caucaia · Nova Iguaçu</div>
       </div>
       <div class="client-card">
-        <div class="client-logo logo-selfit">SelFit</div>
+        <div class="client-logo">
+          <svg viewBox="0 0 110 46" xmlns="http://www.w3.org/2000/svg" width="110" height="46" role="img" aria-label="SelFit">
+            <rect width="110" height="46" rx="9" fill="#0D2D6B"/>
+            <text x="55" y="31" font-family="Arial Black,Impact,sans-serif" font-weight="900" font-size="18" fill="#fff" text-anchor="middle">SelFit</text>
+          </svg>
+        </div>
         <div class="client-sub">Campanha regional</div>
       </div>
       <div class="client-card">
-        <div class="client-logo logo-bodytech">Bodytech</div>
+        <div class="client-logo">
+          <svg viewBox="0 0 130 46" xmlns="http://www.w3.org/2000/svg" width="130" height="46" role="img" aria-label="Bodytech">
+            <rect width="130" height="46" rx="9" fill="#C8102E"/>
+            <text x="65" y="31" font-family="Arial Black,Impact,sans-serif" font-weight="900" font-size="18" fill="#fff" text-anchor="middle">Bodytech</text>
+          </svg>
+        </div>
         <div class="client-sub">Ativação de alunos</div>
       </div>
       <div class="client-card">
-        <div class="client-logo logo-skyfit">SkyFit</div>
+        <div class="client-logo">
+          <svg viewBox="0 0 110 46" xmlns="http://www.w3.org/2000/svg" width="110" height="46" role="img" aria-label="SkyFit">
+            <rect width="110" height="46" rx="9" fill="#009B3A"/>
+            <text x="55" y="31" font-family="Arial Black,Impact,sans-serif" font-weight="900" font-size="18" fill="#fff" text-anchor="middle">SkyFit</text>
+          </svg>
+        </div>
         <div class="client-sub">Campanha local</div>
       </div>
       <div class="client-card">
-        <div class="client-logo logo-smartfit">smartfit</div>
-        <div class="client-sub">Granja Viana São Camilo</div>
-      </div>
-      <div class="client-card">
-        <div class="client-logo logo-plus">+ academias</div>
+        <div class="client-logo">
+          <svg viewBox="0 0 140 46" xmlns="http://www.w3.org/2000/svg" width="140" height="46" role="img" aria-label="Mais academias">
+            <rect width="140" height="46" rx="9" fill="rgba(74,144,217,0.12)" stroke="rgba(74,144,217,0.35)" stroke-width="1.5"/>
+            <text x="70" y="31" font-family="Arial Black,Impact,sans-serif" font-weight="900" font-size="16" fill="#4a90d9" text-anchor="middle">+ academias</text>
+          </svg>
+        </div>
         <div class="client-sub">Em todo o Brasil</div>
       </div>
     </div>
@@ -523,36 +541,4 @@
         <div class="pp-article-meta">
           <span>📅 18/02/2026</span>
           <span>🏆 Publicado pela ABF</span>
-          <span>🌐 portaldofranchising.com.br</span>
-        </div>
-      </div>
-      <div class="pp-article-footer">
-        <span></span>
-        <span class="pp-article-cta">Ler matéria completa →</span>
-      </div>
-    </a>
-  </section>
-  <div class="divider"></div>
-
-  <!-- ═══ CTA ═══ -->
-  <div class="cta-section">
-    <h2>Vamos montar a campanha ideal para a Blue Fit?</h2>
-    <p>Cada academia tem seu público, sua região, seu momento. Vamos conversar e criar juntos o mix perfeito de ações para Granja Viana.</p>
-    <div class="cta-buttons">
-      <a href="https://wa.me/5511989531711?text=Olá%2C%20João!%20Vi%20a%20proposta%20da%20PremiaPão%20para%20a%20Blue%20Fit%20e%20gostaria%20de%20saber%20mais." class="btn-whatsapp" target="_blank">
-        💬 Falar com João Dini
-        <span class="btn-name">(11) 9 8953-1711</span>
-      </a>
-    </div>
-  </div>
-
-</div>
-
-<footer>
-  <strong>PremiaPão</strong> × <strong>Blue Fit Granja Viana</strong> — Marketing Offline Hiperlocalizado<br>
-  Franquia oficial ABF · João Dini · Rafael Bacchi · Amanda Takahashi · Cotia / Granja Viana, SP
-</footer>
-
-</body>
-</html>
-                                                                                                                                                                                                           
+          
