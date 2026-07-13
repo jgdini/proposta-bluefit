@@ -151,13 +151,6 @@
     border:1px solid rgba(255,255,255,0.06);
     padding:20px;text-align:center;
   }
-  .client-icon{font-size:28px;margin-bottom:8px;}
-  .client-brand span{
-    display:inline-block;background:rgba(74,144,217,0.1);
-    border:1px solid rgba(74,144,217,0.25);border-radius:20px;
-    font-size:11px;font-weight:700;color:var(--bf-light);
-    padding:4px 10px;text-transform:uppercase;letter-spacing:0.5px;
-  }
   .client-sub{font-size:11px;color:var(--gray);margin-top:5px;}
 
   /* LOGOS */
@@ -501,5 +494,139 @@
             <path fill-rule="evenodd" clip-rule="evenodd" d="M1345.34 73.37H1397.84L1408.62 117.37H1473.92V173.6H1416.41V304.6C1416.41 330.84 1427.74 343.973 1450.41 344H1486.41V400.24H1416.13C1368.94 400.24 1345.35 374.97 1345.35 324.43L1345.34 73.37Z" fill="#FBBA00"/>
             <path d="M1291.2 117.35H1220.16V400.2H1291.2V117.35Z" fill="#FBBA00"/>
             <path d="M1291.2 14.98H1220.16V73.37H1291.2V14.98Z" fill="#FBBA00"/>
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M1546 400.28C1483.58 498.7 1373.67 564.06 1248.51 564.06C1123.35 564.06 1013.51 498.7 951.06 400.27C1024.41 467.83 1130.52 510.27 1248.51 510.27C1366.5 510.27 1472.64 467.8 1546 400.27" fill="#FBBA00"/>
-            <path d="M8.77 335.21V296.57C29.25 304.77 52.8933 308.867 79.7 308.86C99.7 308.86 109.7 302.43 109.7 289.57C109.7 277.83 102.93 272.02 89.51 272.02H56.14C18.7133 272.007 0 253.267 0 215.8C0 177.267 27.3333 158 82 158C104.256 157.846 126.384 161.387 147.48 168.48V207.12C126.98 198.91 104.79 194.85 80.76 194.85C55.58 194.85 43.06 201.26 43.06 214.14C43.02 225.787 50.3333 231.617 65 231.63H94.77C135.69 231.63 156.163 250.34 156.19 287.76C156.19 326.427 130.107 345.74 77.94 345.7C52.3 345.7 29.2433 342.203 8.77 335.21ZM188.65 344V159.68H224.65L230.09 182.86C251.23 167.41 272.27 159.68 293.09 159.68C316.283 159.68 332.737 168.107 342.45 184.96C365.93 168.08 387.97 159.653 408.57 159.68C447.45 159.68 466.887 183.013 466.88 229.68V344H420.31V228C420.31 207.573 411.667 197.347 394.38 197.32C380.54 197.32 366.077 205.27 350.99 221.17V344H304.52V228.46C304.52 207.667 295.977 197.26 278.89 197.24C264.13 197.24 249.573 205.19 235.22 221.09V344H188.65ZM500.54 286.61C500.54 248.823 527.207 229.937 580.54 229.95C594.899 229.8 609.241 230.958 623.39 233.41V221.31C623.39 204.837 607.413 196.593 575.46 196.58C555.141 196.61 534.933 199.571 515.46 205.37V168.47C534.94 162.703 555.145 159.756 575.46 159.72C638.433 159.72 669.9 179.953 669.86 220.42V344H646.34L626.34 331C610.654 339.609 593.034 344.083 575.14 344C525.4 344 500.54 324.87 500.56 286.61M623.42 268.51C611.67 266.18 597.42 265.05 580.57 265.05C558.19 265.017 547 272 547 286C547 300 556.37 307.03 575.11 307.09C594.03 307.09 610.123 302.297 623.39 292.71L623.42 268.51ZM715.17 344V159.68H751.17L756.91 183.17C773.103 167.543 790.203 159.713 808.21 159.68V197.24C790.877 197.24 775.377 205.007 761.71 220.54V344H715.17ZM837 129.85H871.4L878.47 159.68H921.25V196.54H883.57V281.3C883.57 298.493 890.997 307.1 905.85 307.12H921.25V344H883.4C852.467 344 837 327.43 83
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M1546 400.28C1483.58 498.7 1373.67 564.06 1248.51 564.06C1123.35 564.06 1013.51 498.7 951.06 400.27C1024.41 467.83 1130.52 510.27
+              1248.51 510.27C1366.5 510.27 1472.64 467.8 1546 400.27" fill="#FBBA00"/>
+            <path d="M8.77 335.21V296.57C29.25 304.77 52.8933 308.867 79.7 308.86C99.7 308.86 109.7 302.43 109.7 289.57
+              C109.7 277.83 102.93 272.02 89.51 272.02H56.14C18.7133 272.007 0 253.267 0 215.8C0 177.267 27.3333 158 82 158
+              C104.256 157.846 126.384 161.387 147.48 168.48V207.12C126.98 198.91 104.79 194.85 80.76 194.85
+              C55.58 194.85 43.06 201.26 43.06 214.14C43.02 225.787 50.3333 231.617 65 231.63H94.77
+              C135.69 231.63 156.163 250.34 156.19 287.76C156.19 326.427 130.107 345.74 77.94 345.7
+              C52.3 345.7 29.2433 342.203 8.77 335.21ZM188.65 344V159.68H224.65L230.09 182.86
+              C251.23 167.41 272.27 159.68 293.09 159.68C316.283 159.68 332.737 168.107 342.45 184.96
+              C365.93 168.08 387.97 159.653 408.57 159.68C447.45 159.68 466.887 183.013 466.88 229.68V344H420.31V228
+              C420.31 207.573 411.667 197.347 394.38 197.32C380.54 197.32 366.077 205.27 350.99 221.17V344H304.52V228.46
+              C304.52 207.667 295.977 197.26 278.89 197.24C264.13 197.24 249.573 205.19 235.22 221.09V344H188.65Z
+              M500.54 286.61C500.54 248.823 527.207 229.937 580.54 229.95C594.899 229.8 609.241 230.958 623.39 233.41V221.31
+              C623.39 204.837 607.413 196.593 575.46 196.58C555.141 196.61 534.933 199.571 515.46 205.37V168.47
+              C534.94 162.703 555.145 159.756 575.46 159.72C638.433 159.72 669.9 179.953 669.86 220.42V344H646.34L626.34 331
+              C610.654 339.609 593.034 344.083 575.14 344C525.4 344 500.54 324.87 500.56 286.61
+              M623.42 268.51C611.67 266.18 597.42 265.05 580.57 265.05C558.19 265.017 547 272 547 286
+              C547 300 556.37 307.03 575.11 307.09C594.03 307.09 610.123 302.297 623.39 292.71L623.42 268.51Z
+              M715.17 344V159.68H751.17L756.91 183.17C773.103 167.543 790.203 159.713 808.21 159.68V197.24
+              C790.877 197.24 775.377 205.007 761.71 220.54V344H715.17Z
+              M837 129.85H871.4L878.47 159.68H921.25V196.54H883.57V281.3
+              C883.57 298.493 890.997 307.1 905.85 307.12H921.25V344H883.4
+              C852.467 344 837 327.43 837 294.29V129.85Z" fill="#1a1a1a"/>
+          </svg>
+        </div>
+        <div class="client-sub">Jundiaí · Caucaia · Nova Iguaçu</div>
+      </div>
+      <div class="client-card">
+        <div class="client-logo">
+          <img class="real-logo" src="https://www.selfitacademias.com.br/images/logo.svg" alt="SelFit" loading="lazy">
+        </div>
+        <div class="client-sub">Campanha regional</div>
+      </div>
+      <div class="client-card">
+        <div class="client-logo">
+          <img class="real-logo" src="https://www.bodytech.com.br/images/logos/logo_bt.svg" alt="Bodytech" loading="lazy">
+        </div>
+        <div class="client-sub">Ativação de alunos</div>
+      </div>
+      <div class="client-card">
+        <div class="client-logo">
+          <svg class="badge-logo" viewBox="0 0 110 44" xmlns="http://www.w3.org/2000/svg" width="110" height="44" aria-label="SkyFit">
+            <rect width="110" height="44" rx="8" fill="#009B3A"/>
+            <text x="55" y="29" font-family="Arial Black,Impact,sans-serif" font-weight="900" font-size="18" fill="#fff" text-anchor="middle">SkyFit</text>
+          </svg>
+        </div>
+        <div class="client-sub">Campanha local</div>
+      </div>
+      <div class="client-card">
+        <div class="client-logo">
+          <svg class="badge-logo" viewBox="0 0 140 44" xmlns="http://www.w3.org/2000/svg" width="140" height="44" aria-label="Mais academias">
+            <rect width="140" height="44" rx="8" fill="none" stroke="#009B3A" stroke-width="2"/>
+            <text x="70" y="29" font-family="Arial Black,Impact,sans-serif" font-weight="900" font-size="15" fill="#009B3A" text-anchor="middle">+ academias</text>
+          </svg>
+        </div>
+        <div class="client-sub">Em todo o Brasil</div>
+      </div>
+    </div>
+
+  </section>
+  <div class="divider"></div>
+
+  <!-- ═══ TEAM ═══ -->
+  <section class="section">
+    <p class="section-title">Quem somos nós</p>
+    <h2 class="section-heading">Especialistas em publicidade local</h2>
+    <p class="section-sub">Uma equipe dedicada a transformar o marketing offline em resultados reais para negócios locais.</p>
+    <div class="pp-expert-section">
+      <div class="pp-expert-card">
+        <div class="pp-expert-avatar">JD</div>
+        <div class="pp-expert-info">
+          <h4>João Dini</h4>
+          <div class="role">Franqueado PremiaPão · Especialista em Publicidade Local</div>
+          <p>Coordenação de estratégia e campanhas. Atuou em ativações com academias e negócios locais na região de Cotia e Granja Viana — inclusive a campanha da Alares Ibiúna, destaque no Portal do Franchising.</p>
+        </div>
+      </div>
+      <div class="pp-expert-card">
+        <div class="pp-expert-avatar">R</div>
+        <div class="pp-expert-info">
+          <h4>Rafael Bacchi</h4>
+          <div class="role">Sócio Operacional · Especialista em Ativação de Campo</div>
+          <p>Responsável pela execução das ações de campo, coordenação das promotoras e relacionamento com padarias parceiras na região da Granja Viana e Carapicuíba.</p>
+        </div>
+      </div>
+      <div class="pp-expert-card">
+        <div class="pp-expert-avatar">AT</div>
+        <div class="pp-expert-info">
+          <h4>Amanda Takahashi</h4>
+          <div class="role">Especialista em Marketing Offline · Influencer Digital</div>
+          <p>Especialista em marketing offline e promotoria de campo. Influencer digital com parcerias com grandes marcas e mais de 36 mil seguidores. Estrategista online com atuação no mercado de Alphaville.</p>
+        </div>
+      </div>
+    </div>
+
+    <a href="https://www.portaldofranchising.com.br/historias-do-franchising/casal-fatura-com-franquia-premiapao/" target="_blank" class="pp-article-card">
+      <div class="pp-article-header">
+        <span class="pp-source-tag">ABF — Associação Brasileira de Franchising</span>
+        <span class="pp-article-title-sm">Site oficial · Histórias do Franchising</span>
+      </div>
+      <div class="pp-article-body">
+        <h5>Nossa franquia em destaque no site da ABF: "Casal conquista resultado em 3 meses com a PremiaPão"</h5>
+        <div class="pp-article-meta">
+          <span>📅 18/02/2026</span>
+          <span>🏆 Publicado pela ABF</span>
+          <span>🌐 portaldofranchising.com.br</span>
+        </div>
+      </div>
+      <div class="pp-article-footer">
+        <span></span>
+        <span class="pp-article-cta">Ler matéria completa →</span>
+      </div>
+    </a>
+  </section>
+  <div class="divider"></div>
+
+  <!-- ═══ CTA ═══ -->
+  <div class="cta-section">
+    <h2>Vamos montar a campanha ideal para a Blue Fit?</h2>
+    <p>Cada academia tem seu público, sua região, seu momento. Vamos conversar e criar juntos o mix perfeito de ações para Granja Viana.</p>
+    <div class="cta-buttons">
+      <a href="https://wa.me/5511989531711?text=Olá%2C%20João!%20Vi%20a%20proposta%20da%20PremiaPão%20para%20a%20Blue%20Fit%20e%20gostaria%20de%20saber%20mais." class="btn-whatsapp" target="_blank">
+        💬 Falar com João Dini
+        <span class="btn-name">(11) 9 8953-1711</span>
+      </a>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <strong>PremiaPão</strong> × <strong>Blue Fit Granja Viana</strong> — Marketing Offline Hiperlocalizado<br>
+  Franquia oficial ABF · João Dini · Rafael Bacchi · Amanda Takahashi · Cotia / Granja Viana, SP
+</footer>
+
+</body>
+</html>
